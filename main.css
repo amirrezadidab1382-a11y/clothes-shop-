@@ -1,7 +1,10 @@
 /* settings */
 body{
-    background: rgb(193, 188, 141);
+    background: rgba(142, 93, 4, 0.729);
     font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    box-sizing: border-box;
 }
 /* header */
 .nav{

@@ -1,63 +1,190 @@
+
 <!DOCTYPE html>
-<html lang=''>
+<html lang="en" dir="auto">
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>CL</title>
-    <link rel='stylesheet' href='main.css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CL - Clothes</title>
     <link href="./output.css" rel="stylesheet">
-    <link 
-    rel="icon"
-    href="icon.jpg"
-    >
+    <link rel="icon" href="icon.jpg">
 </head>
-<body>
-    <header>
-        <nav class="nav">
-            <a href="#">home</a>
-            <a href="#">about us</a>
+
+<body class="bg-orange-300">
+
+    <!-- Header -->
+    <header class="bg-black text-white p-5 sticky top-0 z-50 ">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto">
+            <h1 class="text-2xl font-bold">CL.</h1>
+
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-amber-400">Home</a>
+                <a href="#" class="hover:text-amber-400">About us</a>
+            </div>
         </nav>
     </header>
+
     <main>
-        <section>
-    <div class="div_e">
-        <div class="div_h">1</div>
-        <div class="div_h">2</div>
-        <div class="div_h">3</div>
-        <div class="div_h">4</div>
+
+        <!-- Four clothing picture boxes -->
+        <section class="max-w-7xl mx-auto p-5">
+
+           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="h-56 rounded-lg overflow-hidden">
+        <img src="images (1).jpg" class="w-full h-full object-cover" alt="Clothes">
     </div>
 
-    <div class="m">
-        <h1 id="h1" class="mt-5">name</h1>
+    <div class="h-56 rounded-lg overflow-hidden">
+        <img src="images (2).jpg" class="w-full h-full object-cover" alt="Clothes">
     </div>
+
+    <div class="h-56 rounded-lg overflow-hidden">
+        <img src="images (3).jpg" class="w-full h-full object-cover" alt="Clothes">
+    </div>
+
+    <div class="h-56 rounded-lg overflow-hidden">
+        <img src="images (4).jpg" class="w-full h-full object-cover" alt="Clothes">
+    </div>
+        </div>
+
+            <div class="text-center mt-8">
+                <h2 class="text-4xl font-bold">Discover Your Style</h2>
+                <p class="text-gray-500 mt-3">Find clothes that match your personality.</p>
+            </div>
+
         </section>
-            <section>
-<div class="bg-red-950 w-2/2 h-50 mt-7 flex flex-col items-center">
-    <h2 class="text-red-50 text-center">
-        SUMMER SALE UP TO 50% OFF
-    </h2>
 
-    <button type="button"
-        class="text-black bg-amber-400 cursor-pointer rounded">
-        look
-    </button>
-</div>
-    </section>
+        <!-- Two clothing pictures -->
+        <section class="max-w-7xl mx-auto p-5">
+
+            <h2 class="text-3xl font-bold mb-6">Featured Collection</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div class="relative h-96 rounded-xl overflow-hidden">
+                    <img
+                        src="IMG-3154_800x600.webp"
+                        class="w-full h-full object-cover"
+                        alt="Summer clothing collection">
+
+                    <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/70 to-transparent text-white">
+                        <h3 class="text-2xl font-bold">Summer Collection</h3>
+                        <p class="mt-2">Fresh styles for sunny days.</p>
+                    </div>
+                </div>
+
+                <div class="relative h-96 rounded-xl overflow-hidden">
+                    <img
+                        src="images.jpg"
+                        class="w-full h-full object-cover"
+                        alt="Modern fashion outfit">
+
+                    <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/70 to-transparent text-white">
+                        <h3 class="text-2xl font-bold">Modern Fashion</h3>
+                        <p class="mt-2">Simple looks, great style.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Sale section -->
+        <section class="mt-8">
+
+            <div class="bg-red-950 w-full min-h-52 flex flex-col items-center justify-center gap-5 p-6">
+
+                <h2 class="text-red-50 text-center text-3xl md:text-4xl font-bold">
+                    SUMMER SALE UP TO 50% OFF
+                </h2>
+
+                <p class="text-white text-center">
+                    Discover your favorite summer styles.
+                </p>
+
+                <button type="button"
+                    class="text-black bg-amber-400 cursor-pointer rounded px-8 py-3 font-bold hover:bg-amber-300 transition">
+                    Shop Now
+                </button>
+
+            </div>
+
+        </section>
+
     </main>
-    <footer>
-        <p class="text-black text-3xl mt-2.5">Blog</p>
-        <div class="bg-yellow-700 border-2 rounded mt-1.5  flex flex-col items-center flex-wrap">
-            <div>Summer clothes</div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-12 p-8">
+
+        <div class="max-w-7xl mx-auto">
+
+            <h2 class="text-3xl font-bold mb-2">Fashion Blog</h2>
+            <p class="text-gray-400 mb-6">
+                Explore ideas and inspiration for your style.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden hover:-translate-y-1 transition">
+                    <img
+                        src="images (6).jpg"
+                        class="w-full h-44 object-cover"
+                        alt="Summer outfits">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Summer Clothes</h3>
+                        <p class="text-gray-400 text-sm mt-2">
+                            Discover comfortable summer outfits.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden hover:-translate-y-1 transition">
+                    <img
+                        src="images (7).jpg"
+                        class="w-full h-44 object-cover"
+                        alt="Fashion trends">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Fashion Trends</h3>
+                        <p class="text-gray-400 text-sm mt-2">
+                            Explore the latest fashion ideas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden hover:-translate-y-1 transition">
+                    <img
+                        src="fast-fashion-concept-with-piles-clothes_23-2150871198.avif"
+                        class="w-full h-44 object-cover"
+                        alt="Women's clothing">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Daily Outfits</h3>
+                        <p class="text-gray-400 text-sm mt-2">
+                            Get inspiration for everyday looks.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden hover:-translate-y-1 transition">
+                    <img
+                        src="AdobeStock_303371265.jpeg"
+                        class="w-full h-44 object-cover"
+                        alt="Fashion styling">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Style Tips</h3>
+                        <p class="text-gray-400 text-sm mt-2">
+                            Find new ways to style your clothes.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="text-center text-gray-500 mt-10">
+                © 2026 CL. All rights reserved.
+            </p>
+
         </div>
-        <div class="bg-yellow-700 border-2 rounded mt-1.5  flex flex-col items-center  flex-wrap">
-            <div>Summer clothes</div>
-        </div>
-        <div class="bg-yellow-700 border-2 rounded mt-1.5  flex flex-col items-center  flex-wrap">
-            <div>Summer clothes</div>
-        </div>
-        <div class="bg-yellow-700 border-2 rounded mt-1.5  flex flex-col items-center w-1/2 h-1/2 flex-wrap">
-            <div>Summer clothes</div>
-        </div>
+
     </footer>
+
 </body>
 </html>
